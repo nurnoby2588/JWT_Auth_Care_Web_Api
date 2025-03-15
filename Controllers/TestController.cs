@@ -8,7 +8,7 @@ namespace JWT_Auth_Care_Web_Api.Controllers
     [ApiController]
     public class TestController : ControllerBase
     {
-        [HttpGet("Index"),Authorize ]
+        [HttpGet("Index"), Authorize ]
         public IActionResult Index()
         {
             return Ok(new { ff = "This is Private Access"});
